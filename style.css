@@ -125,10 +125,7 @@ body::after{
   height: auto;
   max-width: 100%;
 
-  filter:
-drop-shadow(0 0 15px rgba(255,235,170,.9))
-drop-shadow(0 0 30px rgba(255,215,120,.8))
-drop-shadow(0 0 45px rgba(120,180,255,.5));
+  opacity:.9;
 
   animation: castleFloat 4s ease-in-out infinite;
 }
@@ -333,7 +330,7 @@ box-shadow:
 
   .card{
 
-backdrop-filter:blur(4px);
+background: rgba(12,16,30,.88);
 
 box-shadow:
 0 8px 22px rgba(0,0,0,.35);
