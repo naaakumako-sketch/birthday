@@ -241,3 +241,59 @@ button {
   align-items: center;
   background: rgba(0,0,0,0.85);
 }
+/* ===========================
+   スマホ対応
+=========================== */
+@media (max-width: 768px) {
+
+  .card{
+    padding:40px 25px;
+  }
+
+  h1{
+    font-size:42px;
+    line-height:1.15;
+  }
+
+  .date{
+    font-size:22px;
+  }
+
+  .message{
+    font-size:24px;
+  }
+
+  .subtext{
+    font-size:16px;
+  }
+
+  button{
+    width:100%;
+    font-size:18px;
+    padding:16px;
+  }
+
+  .frame{
+    padding:12px;
+    border-width:6px;
+  }
+
+  #artwork{
+    max-width:100%;
+    border-width:8px;
+  }
+
+  .text h2{
+    font-size:36px;
+  }
+
+  .text p{
+    font-size:18px;
+    line-height:1.8;
+  }
+
+  .love{
+    font-size:26px;
+  }
+
+}
