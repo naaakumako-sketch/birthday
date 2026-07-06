@@ -334,8 +334,6 @@ drop-shadow(0 0 5px rgba(255,255,255,.8));
 
 }
 
-}
-
 /* タップ後の拡大表示（lightbox） */
 #lightbox {
   position: fixed;
