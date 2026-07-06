@@ -264,6 +264,30 @@ box-shadow:
   align-items: center;
   background: rgba(0,0,0,0.85);
 }
+
+#lightbox img {
+  max-width: 85vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+
+  border: 10px solid white;
+  box-shadow: 0 0 40px rgba(255,255,255,.3);
+
+  animation: zoomIn .4s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 /* ===========================
    スマホ対応
 =========================== */
@@ -317,7 +341,7 @@ box-shadow:
 
   .love{
     font-size:26px;
-
+  }
       .card{
     backdrop-filter: blur(4px);
     box-shadow: 0 8px 22px rgba(0,0,0,.35);
