@@ -7,26 +7,35 @@
 body {
   font-family: 'Playfair Display', serif;
   overflow-x: hidden;
+  color: white;
 
-  background: linear-gradient(
-    180deg,
-    #000000 0%,
-    #020510 25%,
-    #040b22 55%,
-    #071a3a 80%,
-    #0b2a4a 100%
-  );
+  background:
+    radial-gradient(circle at top, #13234d 0%, transparent 45%),
+    linear-gradient(
+      180deg,
+      #02030a 0%,
+      #040916 25%,
+      #07142c 55%,
+      #0d2450 80%,
+      #173d73 100%
+    );
+
+  background-attachment: fixed;
 }
 
 /* 星空粒 */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: radial-gradient(white 1px, transparent 1px);
-  background-size: 3px 3px;
-  opacity: 0.07;
-  pointer-events: none;
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+
+    background:
+        radial-gradient(circle,rgba(255,255,255,.95) 1px,transparent 1.5px);
+
+    background-size:120px 120px;
+
+    opacity:.28;
 }
 
 /* キラキラ */
@@ -86,14 +95,15 @@ body::after {
   text-align: center;
 
   background: rgba(10, 15, 30, 0.65);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(8px);
 
   border-radius: 32px;
   border: 1px solid rgba(255,215,120,0.25);
 
   padding: 80px 60px;
 
-  box-shadow: 0 30px 90px rgba(0,0,0,0.6);
+  box-shadow:
+0 12px 35px rgba(0,0,0,.45);
 
   animation: float 6s ease-in-out infinite;
 }
@@ -111,13 +121,14 @@ body::after {
 }
 
 .castle img {
-  width: 80px;
+  width:105px;
   height: auto;
   max-width: 100%;
 
   filter:
-    drop-shadow(0 0 10px rgba(255,220,120,0.6))
-    drop-shadow(0 0 20px rgba(120,180,255,0.3));
+drop-shadow(0 0 15px rgba(255,235,170,.9))
+drop-shadow(0 0 30px rgba(255,215,120,.8))
+drop-shadow(0 0 45px rgba(120,180,255,.5));
 
   animation: castleFloat 4s ease-in-out infinite;
 }
@@ -189,6 +200,21 @@ button {
 #openButton {
   background: linear-gradient(135deg,#f6d27a,#caa24a);
   color: #1a1a1a;
+  transition:.35s;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.35),
+0 0 20px rgba(255,215,120,.25);
+}
+
+#openButton:hover{
+
+transform:translateY(-4px) scale(1.03);
+
+box-shadow:
+0 18px 40px rgba(0,0,0,.45),
+0 0 28px rgba(255,215,120,.5);
+
 }
 
 #backButton {
@@ -251,9 +277,9 @@ button {
   }
 
   h1{
-    font-size:42px;
-    line-height:1.15;
-  }
+  font-size:28px;
+  line-height:1.2;
+}
 
   .date{
     font-size:22px;
@@ -295,5 +321,21 @@ button {
   .love{
     font-size:26px;
   }
+
+  .card{
+
+backdrop-filter:blur(4px);
+
+box-shadow:
+0 8px 22px rgba(0,0,0,.35);
+
+}
+
+.sparkles span::before{
+
+filter:
+drop-shadow(0 0 5px rgba(255,255,255,.8));
+
+}
 
 }
