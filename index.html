@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ken's Birthday</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 星空 -->
+<div class="background"></div>
+
+<div class="sparkles">
+  <span></span><span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<div id="burstStars"></div>
+
+<!-- 1ページ -->
+<section id="page1" class="page">
+
+  <div class="card">
+
+    <div class="castle">
+      <img src="images/castle.png" alt="castle">
+    </div>
+
+    <h1>Happy Birthday,<br>Ken!</h1>
+
+    <p class="date">July 8, 2026</p>
+
+    <div class="divider"><span></span>✦<span></span></div>
+
+    <p class="message">
+      I have a special<br>surprise for you.
+    </p>
+
+    <p class="subtext">
+      Tap to begin the magic ✨
+    </p>
+
+    <button id="openButton">Open your present 🎁</button>
+
+  </div>
+
+</section>
+
+<!-- 2ページ -->
+<section id="page2" class="page">
+
+  <div class="gallery">
+
+    <div class="frame">
+      <img id="artwork" src="illust.jpg" alt="art">
+    </div>
+
+    <div class="text">
+
+      <h2>Happy Birthday</h2>
+
+      <p>
+  I drew this illustration just for you.<br>
+  I hope this becomes one of your happiest memories.<br><br>
+  With Love,
+</p>
+
+      <div class="love">❤️ Nana</div>
+
+      <button id="backButton">← Back</button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div id="lightbox"><img src="illust.jpg"></div>
+<div id="flash"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
