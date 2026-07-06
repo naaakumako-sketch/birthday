@@ -9,7 +9,7 @@ const sparkles = document.querySelector(".sparkles");
 
 sparkles.innerHTML = "";
 
-for (let i = 0; i < 60; i++) {
+for (let i = 0; i < 25; i++) { {
   const star = document.createElement("span");
 
   star.style.left = Math.random() * 100 + "%";
