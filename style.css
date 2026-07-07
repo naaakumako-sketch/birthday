@@ -22,6 +22,8 @@ body {
       #173d73 100%
     );
 
+  overscroll-behavior: none;
+
   /*background-attachment: fixed;*/
 }
 
