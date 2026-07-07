@@ -254,6 +254,9 @@ box-shadow:
   padding: 20px;
   border: 10px solid #d8b56d;
   background: linear-gradient(135deg,#fffdf8,#efe3c8);
+
+  position: relative;
+  z-index: 2;
 }
 
 #artwork {
@@ -261,6 +264,9 @@ box-shadow:
   max-width: 520px;
   border: 14px solid white;
   cursor: pointer;
+
+  position: relative;
+  z-index: 2;
 }
 /* ===========================
    スマホ対応
