@@ -246,6 +246,10 @@ box-shadow:
   margin-top: 24px;
 }
 
+.text {
+  margin-top: 40px;
+}
+
 .frame {
   padding: 20px;
   border: 10px solid #d8b56d;
